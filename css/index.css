@@ -7,8 +7,7 @@
 }
 
 body {
-    background-color: #000000;
-    color: var(--white);
+    background-color: #0b0b0b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
 }
@@ -141,7 +140,6 @@ span {
 }
 
 /* Cards */
-
 .about-container {
     background-color: #161616;
     border: 1px solid #292929;
@@ -190,4 +188,8 @@ footer {
     text-align: center;
     padding: 20px;
     border-top: 1px solid #252525;
+}
+
+.portfolio {
+    color: var(--white);
 }
