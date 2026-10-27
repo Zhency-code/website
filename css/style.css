@@ -9,6 +9,7 @@
 
 body{
     background-color: #c9d6ff;
+    color: #0e0606;
     background: linear-gradient(to right, #0e0606, #5e5958);
     display: flex;
     align-items: center;
