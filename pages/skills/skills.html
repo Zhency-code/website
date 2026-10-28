@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
+<div class="scroll-progress" aria-hidden="true"></div>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -18,56 +19,52 @@
             <a href="../about/about.html">About</a>
             <a href="../skills/skills.html">Skills</a>
             <a href="../projects/projects.html">Projects</a>
+<a href="../home/home.html#contact">Contact</a>
         </div>
-    </nav>
+    <div class="nav-actions"><button class="icon-button" type="button" data-theme-toggle aria-label="Switch theme" title="Switch theme">☼</button></div>
+</nav>
 
     <!-- Skills Section -->
-    <section id="skills">
-        <h2 style="text-align: center; margin-top: 30px;">My <span>Skills</span></h2>
+    <header class="page-heading reveal"><h1>My <span>Skills</span></h1><p>Choose a technology to read what I use it for and what I am learning.</p></header>
+<section id="skills">
+        
 
         <div class="card-container">
-            <div class="card">
+            <div class="card skill-card" role="button" tabindex="0" data-skill-title="HTML" data-skill-description="HTML provides the structure of a web page using headings, paragraphs, links, images, forms, and semantic elements.">
                 <h3>HTML</h3>
                 <p>Building the structure of websites.</p>
             </div>
 
-            <div class="card">
+            <div class="card skill-card" role="button" tabindex="0" data-skill-title="CSS" data-skill-description="CSS controls the visual presentation of websites, including colors, spacing, responsive layouts, hover states, and animations.">
                 <h3>CSS</h3>
                 <p>Styling websites with colors and layouts.</p>
             </div>
 
-            <div class="card">
+            <div class="card skill-card" role="button" tabindex="0" data-skill-title="JavaScript" data-skill-description="JavaScript adds interaction, responds to events, validates forms, filters lists, and updates page content.">
                 <h3>JavaScript</h3>
                 <p>Primarily used to make web pages interactive and dynamic.</p>
             </div>
 
-            <div class="card">
+            <div class="card skill-card" role="button" tabindex="0" data-skill-title="Java" data-skill-description="Java is a general-purpose language used to practice object-oriented programming and build applications, including JavaFX projects.">
                 <h3>Java</h3>
                 <p>Programming language for building applications.</p>
             </div>
 
-            <div class="card">
+            <div class="card skill-card" role="button" tabindex="0" data-skill-title="PHP" data-skill-description="PHP runs on the server and can handle forms, sessions, authentication, and database-backed web applications.">
                 <h3>PHP</h3>
                 <p>Server-side scripting language for web development.</p>
             </div>
 
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section">
-        <h2>Contact <span>Me</span></h2>
-
-            <p>Email: chenzabarca349@gmail.com</p>
-            <p>Phone: +639684077493</p>
-            <p>Location: Pasig City, Metro Manila</p>
-
+        <div class="skill-detail" data-skill-detail aria-live="polite"><strong>Explore a skill</strong><p>Select any card above to see a short explanation.</p></div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>© 2026 My Portfolio. All rights reserved.</p>
     </footer>
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
+<script src="../../js/portfolio.js"></script>
 </body>
 </html>

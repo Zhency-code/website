@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
+<div class="scroll-progress" aria-hidden="true"></div>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -19,8 +20,10 @@
             <a href="../about/about.html">About</a>
             <a href="../skills/skills.html">Skills</a>
             <a href="../projects/projects.html">Projects</a>
+<a href="../home/home.html#contact">Contact</a>
         </div>
-    </nav>
+    <div class="nav-actions"><button class="icon-button" type="button" data-theme-toggle aria-label="Switch theme" title="Switch theme">☼</button></div>
+</nav>
 
     <!-- Hero Section -->
     <header id="home" class="hero">
@@ -29,7 +32,7 @@
 
             <h1>Chenz Samuel</h1>
 
-            <h2>Future <span>Web Developer</span></h2>
+            <h2>Future <span data-typing>Web Developer</span></h2>
 
             <p class="description">
                 I'm a student from Rizal High School learning HTML, CSS, and
@@ -37,6 +40,7 @@
             </p>
 
             <a href="../about/about.html" class="btn">Learn More</a>
+<a href="../projects/projects.html" class="btn secondary-btn">View Projects</a>
         </div>
 
         <div class="hero-image">
@@ -44,20 +48,16 @@
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section class="section">
-        <h2>Contact <span>Me</span></h2>
-
-            <p>Email: chenzabarca349@gmail.com</p>
-            <p>Phone: +639684077493</p>
-            <p>Location: Pasig City, Metro Manila</p>
-
-    </section>
-
+    <section class="section reveal" id="contact"><h2>Contact <span>Me</span></h2><p>Have a question or want to talk about a project? Prepare a message below.</p>
+    <div class="contact-grid"><div class="contact-info"><h3>Let's connect</h3><p><strong>Email:</strong> chenzabarca349@gmail.com</p><p><strong>Phone:</strong> +639684077493</p><p><strong>Location:</strong> Pasig City, Metro Manila</p><p>Submitting opens your default email application with a draft. Nothing is sent automatically.</p></div>
+    <form class="contact-form" data-contact-form><label for="contact-name">Name<input id="contact-name" name="name" autocomplete="name" required></label><label for="contact-email">Email<input id="contact-email" name="email" type="email" autocomplete="email" required></label><label for="contact-subject">Subject<input id="contact-subject" name="subject" required></label><label for="contact-message">Message<textarea id="contact-message" name="message" required></textarea></label><button class="btn" type="submit">Prepare Email</button><p class="form-message" data-form-message aria-live="polite"></p></form></div></section>
+    <section class="section reveal" id="terminal-section"><h2>Explore My <span>Terminal</span></h2><p>Type <strong>help</strong> to see commands. This demo terminal only displays portfolio information.</p><div class="terminal"><div class="terminal-top" aria-hidden="true"><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-title">chenz-portfolio — visitor terminal</span></div><div class="terminal-body" data-terminal-output aria-live="polite"><p class="terminal-line">Welcome. Type <strong>help</strong> to begin.</p></div><form class="terminal-form" data-terminal-form><span class="terminal-prompt" aria-hidden="true">$</span><input class="terminal-input" data-terminal-input aria-label="Terminal command" placeholder="Try: skills" autocomplete="off"></form></div></section>
     <!-- Footer -->
     <footer>
         <p>© 2026 My Portfolio. All rights reserved.</p>
     </footer>
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
+<script src="../../js/portfolio.js"></script>
 </body>
 </html>
